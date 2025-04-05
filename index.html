@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsip Foto Spesial ❤️ Azis & Ntii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Latar Belakang Luar Angkasa Parallax -->
+    <div class="space-background" id="spaceBackground">
+        <!-- Layer Terdalam (Bintang) -->
+        <div class="stars-layer"></div>
+
+        <!-- Layer Nebula/Planet (Urut dari belakang ke depan) -->
+        <div class="space-layer layer-1" data-depth="0.1">
+             <img src="https://media.tenor.com/5QVZZRlMtAYAAAAj/planet.gif" class="planet planet-dist1" alt="Planet Jauh 1">
+             <!-- Tambah elemen lain jika perlu -->
+        </div>
+        <div class="space-layer layer-2" data-depth="0.25">
+             <img src="https://media.tenor.com/heQqp0E5s8MAAAAi/planet.gif" class="planet planet-saturn" alt="Saturnus">
+        </div>
+        <div class="space-layer layer-3" data-depth="0.5">
+             <img src="https://media.tenor.com/_VcD3-ShQlgAAAAj/space-planet.gif" class="planet planet-jupiter" alt="Jupiter">
+        </div>
+        <div class="space-layer layer-4" data-depth="0.8">
+             <img src="https://media.tenor.com/cOzgHz34BacAAAAi/wikipedia-wiki.gif" class="planet planet-red" alt="Planet Merah">
+             <img src="https://media.tenor.com/JNoDgfaWGfAAAAAi/pink-squirt.gif" class="planet planet-blue" alt="Planet Biru">
+        </div>
+         <div class="space-layer layer-5" data-depth="1.0">
+              <img src="https://media.tenor.com/_NchQpp9-DMAAAAi/space-planet.gif" class="planet planet-close1" alt="Planet Dekat">
+         </div>
+    </div>
+    <!-- Akhir Latar Belakang -->
+
+    <!-- 2. Popup Selamat Datang -->
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="popup-content">
+            <h2>✨ Selamat Datang ✨</h2>
+            <p>Di Arsip Kenangan Spesial</p>
+            <h1>Azis ❤️ Ntii</h1>
+            <h2>✨sabtu-5-April-2025💝</h2>
+            <button id="enterButton">Jelajahi Kenangan</button>
+        </div>
+    </div>
+    <!-- Akhir Popup -->
+
+    <!-- 3. Elemen Audio -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="https://e.top4top.io/m_3382ubnx81.mp3" type="audio/mpeg">
+        Browser kamu tidak support elemen audio.
+    </audio>
+    <!-- Akhir Audio -->
+
+    <!-- 4. Konten Utama (Carousel Foto) -->
+    <div class="main-content" id="mainContent">
+        <!-- Scene untuk Perspective 3D -->
+        <div class="scene" id="scene">
+            <!-- Carousel Container -->
+            <div class="carousel">
+                <!-- 10 Kartu Foto (Ganti src gambar sesuai milikmu) -->
+                <div class="carousel__cell card" data-index="0"><img src="nti1.jpg" alt="Foto Kenangan 1"></div>
+                <div class="carousel__cell card" data-index="1"><img src="zos1.jpg" alt="Foto Kenangan 2"></div>
+                <div class="carousel__cell card" data-index="2"><img src="nti2.jpg" alt="Foto Kenangan 3"></div>
+                <div class="carousel__cell card" data-index="3"><img src="zos2.jpg" alt="Foto Kenangan 4"></div>
+                <div class="carousel__cell card" data-index="4"><img src="nti3.jpg" alt="Foto Kenangan 5"></div>
+                <div class="carousel__cell card" data-index="5"><img src="zos3.jpg" alt="Foto Kenangan 6"></div>
+                <div class="carousel__cell card" data-index="6"><img src="nti4.jpg" alt="Foto Kenangan 7"></div>
+                <div class="carousel__cell card" data-index="7"><img src="zos4.jpg" alt="Foto Kenangan 8"></div>
+                <div class="carousel__cell card" data-index="8"><img src="nti5.jpg" alt="Foto Kenangan 9"></div>
+                <div class="carousel__cell card" data-index="9"><img src="zos5.jpg" alt="Foto Kenangan 10"></div>
+            </div>
+        </div>
+
+        <!-- Instruksi -->
+        <div class="instructions" id="instructions">
+            Geser / Scroll untuk memutar.<br>
+            Klik foto untuk fokus ❤️
+        </div>
+    </div>
+    <!-- Akhir Konten Utama -->
+
+    <script src="script.js"></script>
+</body>
+</html>
