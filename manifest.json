@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaksi Kenangan Untukmu</title>
+
+    <!-- Link ke Manifest PWA -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Meta tag untuk warna tema (iOS & beberapa browser) -->
+    <meta name="theme-color" content="#1a2533"> <!-- Samakan dengan theme_color di manifest -->
+     <!-- Tambahkan meta tag lain jika perlu (apple-touch-icon, dll) -->
+     <link rel="apple-touch-icon" href="https://assets.berty.tech/files/favicon_berty--android-chrome-192x192.png"> <!-- Contoh ikon untuk iOS -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon (opsional tapi bagus) -->
+    <link rel="icon" href="https://static-00.iconduck.com/assets.00/overseerr-icon-1024x1024-vs89p8jo.png" type="image/png">
+
+</head>
+<body>
+    <!-- ... (isi body Anda: popup, main-content, scene, dll.) ... -->
+
+    <script src="script.js"></script>
+</body>
+</html>
