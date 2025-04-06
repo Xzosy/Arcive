@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+<!-- Optional: Theme color for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#2c3e50">
     <title>Arsip Foto Spesial ❤️ Azis & Ntii</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -83,4 +88,23 @@
 
     <script src="script.js"></script>
 </body>
+<!-- index.html (di akhir body) -->
+
+<script>
+  // Periksa apakah Service Worker didukung oleh browser
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => { // Daftarkan setelah halaman & resource selesai load
+      navigator.serviceWorker.register('/sw.js') // Path ke file SW Anda
+        .then(registration => {
+          console.log('Service Worker registered successfully with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  } else {
+    console.log('Service Worker is not supported by this browser.');
+  }
+</script>
+</body> <!-- Tepat sebelum tag penutup body -->
 </html>

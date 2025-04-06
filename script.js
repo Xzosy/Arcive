@@ -9,6 +9,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     const cells = Array.from(carousel.querySelectorAll('.carousel__cell'));
 
+
+// script.js (di dalam DOMContentLoaded, mungkin di bagian paling bawah)
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (semua kode Anda yang sudah ada) ...
+
+    // --- PWA Service Worker Registration ---
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js') // Path ke file SW Anda
+                .then(registration => {
+                    console.log('PWA Service Worker registered successfully with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('PWA Service Worker registration failed:', error);
+                });
+        });
+    } else {
+        console.log('Service Worker is not supported by this browser.');
+    }
+});
     // Parallax Elements
     const spaceBackground = document.getElementById('spaceBackground');
     const spaceLayers = Array.from(spaceBackground?.querySelectorAll('.space-layer') || []); // Handle jika tidak ada
