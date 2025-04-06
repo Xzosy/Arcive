@@ -7,9 +7,9 @@ const urlsToCache = [
   '/style.css', // File CSS Anda
   '/script.js', // File JavaScript Anda
   '/manifest.json', // File manifest
-  '/images/icon-192x192.png', // Ikon yang penting
-  '/images/icon-512x512.png', // Ikon yang penting
-  '/images/stars_background.png' // Gambar background bintang jika penting untuk offline
+  '/https://assets.berty.tech/files/favicon_berty--android-chrome-192x192.png', // Ikon yang penting
+  '/https://assets.berty.tech/files/favicon_berty--android-chrome-512x512_hu8c11226219fbafadc0690fa2ac23a909_19505_512x0_resize_box_2.png', // Ikon yang penting
+  '/https://static.vecteezy.com/system/resources/previews/012/896/227/non_2x/star-sparkle-colourful-element-free-png.png' // Gambar background bintang jika penting untuk offline
   // Tambahkan path ke gambar planet atau carousel JIKA Anda ingin mereka cached awal
   // '/images/planets/planet-dist1.png',
   // '/images/carousel/foto1.jpg',
